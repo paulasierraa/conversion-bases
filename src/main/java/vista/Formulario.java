@@ -59,7 +59,6 @@ public class Formulario extends javax.swing.JFrame {
 
         TxtBaseFi.setBackground(new java.awt.Color(51, 51, 51));
 
-        BtnCalcu.setForeground(new java.awt.Color(255, 255, 255));
         BtnCalcu.setText("CALCULAR");
         BtnCalcu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +79,6 @@ public class Formulario extends javax.swing.JFrame {
         TxtNumFi.setEditable(false);
         TxtNumFi.setForeground(new java.awt.Color(51, 51, 51));
 
-        BtnProbar.setForeground(new java.awt.Color(255, 255, 255));
         BtnProbar.setText("PROBAR");
         BtnProbar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,14 +136,14 @@ public class Formulario extends javax.swing.JFrame {
                             .addComponent(TxtNumFi, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 429, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BtnProbar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(208, 208, 208))
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(208, 208, 208)
                 .addComponent(BtnCalcu, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BtnProbar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(206, 206, 206))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
