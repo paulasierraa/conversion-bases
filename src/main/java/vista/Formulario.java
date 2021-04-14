@@ -51,11 +51,15 @@ public class Formulario extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jDesktopPane1.setBackground(new java.awt.Color(0, 0, 0));
-        jDesktopPane1.setBorder(javax.swing.BorderFactory.createTitledBorder("CONVERSOR "));
+        jDesktopPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CONVERSOR ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jDesktopPane1.setDesktopManager(null);
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("CONVERTIR NUMERO");
 
+        TxtBaseFi.setBackground(new java.awt.Color(51, 51, 51));
+
+        BtnCalcu.setForeground(new java.awt.Color(255, 255, 255));
         BtnCalcu.setText("CALCULAR");
         BtnCalcu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,12 +67,20 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
 
+        TxtNumOr.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("EN BASE");
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("A LA BASE: ");
 
-        TxtNumFi.setEditable(false);
+        TxtBaseOr.setBackground(new java.awt.Color(51, 51, 51));
 
+        TxtNumFi.setEditable(false);
+        TxtNumFi.setForeground(new java.awt.Color(51, 51, 51));
+
+        BtnProbar.setForeground(new java.awt.Color(255, 255, 255));
         BtnProbar.setText("PROBAR");
         BtnProbar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,11 +89,13 @@ public class Formulario extends javax.swing.JFrame {
         });
 
         TxtAProce.setEditable(false);
+        TxtAProce.setBackground(new java.awt.Color(51, 51, 51));
         TxtAProce.setColumns(20);
         TxtAProce.setRows(5);
         jScrollPane1.setViewportView(TxtAProce);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("=");
 
         jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
