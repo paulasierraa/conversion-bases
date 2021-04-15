@@ -58,6 +58,7 @@ public class Formulario extends javax.swing.JFrame {
         jLabel1.setText("CONVERTIR NUMERO");
 
         TxtBaseFi.setBackground(new java.awt.Color(51, 51, 51));
+        TxtBaseFi.setForeground(new java.awt.Color(255, 255, 255));
 
         BtnCalcu.setText("CALCULAR");
         BtnCalcu.addActionListener(new java.awt.event.ActionListener() {
@@ -67,6 +68,8 @@ public class Formulario extends javax.swing.JFrame {
         });
 
         TxtNumOr.setBackground(new java.awt.Color(51, 51, 51));
+        TxtNumOr.setForeground(new java.awt.Color(255, 255, 255));
+        TxtNumOr.setDisabledTextColor(new java.awt.Color(255, 255, 255));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("EN BASE");
@@ -75,9 +78,10 @@ public class Formulario extends javax.swing.JFrame {
         jLabel3.setText("A LA BASE: ");
 
         TxtBaseOr.setBackground(new java.awt.Color(51, 51, 51));
+        TxtBaseOr.setForeground(new java.awt.Color(255, 255, 255));
 
         TxtNumFi.setEditable(false);
-        TxtNumFi.setForeground(new java.awt.Color(51, 51, 51));
+        TxtNumFi.setForeground(new java.awt.Color(255, 255, 255));
 
         BtnProbar.setText("PROBAR");
         BtnProbar.addActionListener(new java.awt.event.ActionListener() {
@@ -89,6 +93,7 @@ public class Formulario extends javax.swing.JFrame {
         TxtAProce.setEditable(false);
         TxtAProce.setBackground(new java.awt.Color(51, 51, 51));
         TxtAProce.setColumns(20);
+        TxtAProce.setForeground(new java.awt.Color(255, 255, 255));
         TxtAProce.setRows(5);
         jScrollPane1.setViewportView(TxtAProce);
 
@@ -114,12 +119,12 @@ public class Formulario extends javax.swing.JFrame {
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(54, 54, 54)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(TxtNumOr)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtNumOr, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(50, 50, 50)
                         .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addGroup(jDesktopPane1Layout.createSequentialGroup()
@@ -129,17 +134,15 @@ public class Formulario extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(TxtBaseFi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addContainerGap(100, Short.MAX_VALUE))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(TxtNumFi, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 429, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(TxtNumFi, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 429, Short.MAX_VALUE)))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(208, 208, 208)
                 .addComponent(BtnCalcu, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(198, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BtnProbar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)

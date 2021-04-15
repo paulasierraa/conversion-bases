@@ -31,10 +31,11 @@ public class controlador implements ActionListener {
         this.frmprincipal.setTitle("CONVERSOR DE BASES");
         this.frmprincipal.setLocationRelativeTo(null);
         this.frmprincipal.setVisible(true);
+        generarBase64();
     }
 
     public void actionPerformed(ActionEvent e) {
-        generarBase64();
+        
         if(e.getSource().equals(frmprincipal.getBtnCalcu())){
             
         }
