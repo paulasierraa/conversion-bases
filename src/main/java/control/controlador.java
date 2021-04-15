@@ -34,7 +34,10 @@ public class controlador implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-
+        generarBase64();
+        if(e.getSource().equals(frmprincipal.getBtnCalcu())){
+            
+        }
     }
 
     public void generarBase64() {
