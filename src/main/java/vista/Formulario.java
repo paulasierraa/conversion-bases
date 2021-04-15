@@ -81,7 +81,6 @@ public class Formulario extends javax.swing.JFrame {
         TxtBaseOr.setForeground(new java.awt.Color(255, 255, 255));
 
         TxtNumFi.setEditable(false);
-        TxtNumFi.setForeground(new java.awt.Color(255, 255, 255));
 
         BtnProbar.setText("PROBAR");
         BtnProbar.addActionListener(new java.awt.event.ActionListener() {
